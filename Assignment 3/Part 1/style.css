@@ -1,7 +1,17 @@
 html {
-  background-color: white;
+	background-color: white;
 }
 
 body {
-  font: 1.2em / 1.5 system-ui;
+	font: 1.2em / 1.5 system-ui;
+	padding: 20px;
+	width: 500px;
+	background: #efefef;
+	margin: 0 auto 0;
+}
+ul {
+	background-color: white;
+	padding: 30px;
+	border: 5px solid purple;
+	border-radius: 20px;
 }
