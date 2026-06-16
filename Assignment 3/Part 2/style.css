@@ -10,6 +10,9 @@ body {
   min-width: 980px;
   max-width: 1400px;
   font-family: "Georgia", serif;
+  font-size: 1.2em;
+  line-height: 32px;
+  letter-spacing: 0.1em;
 }
 
 /* Layout */
@@ -35,6 +38,24 @@ footer p {
   text-align: center;
 }
 
+/*headings*/
+
 h1, h2 {
 	font-family: "Roboto Slab", serif;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+/*paragraphs*/
+
+h2 + p {
+	text-indent: 2rem;
 }
