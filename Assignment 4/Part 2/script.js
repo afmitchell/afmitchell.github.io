@@ -20,3 +20,20 @@ for (const image of images) {
     thumbBar.appendChild(newImage);
     newImage.addEventListener("click", updateDisplayedImage);
 }
+
+function updateDisplayedImage(event) {
+    displayedImage.src = event.target.src;
+    displayedImage.alt = event.target.alt;
+}
+
+btn.addEventListener("click", () => {
+    if(btn.getAttribute("class") === "dark") {
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    }
+    else {
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
+    }
+    btn.classList.toggle("dark");
+});
