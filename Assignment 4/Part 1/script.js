@@ -31,16 +31,19 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+  var newStory = returnRandomStoryString();
   if (customName.value !== "") {
     const name = customName.value;
+    newStory = newStory.replaceAll("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = Math.round(300/14)+" stone";
+    const temperature = Math.round((94 - 32) * 5/9)+" Celsius";
+    newStory = newStory.replaceAll("94 Fahrenheit", temperature);
+    newStory = newStory.replaceAll("300 pounds", weight);
   }
 
-  // TODO: replace "" with the correct expression
-  story.textContent = "";
+  story.textContent = newStory;
   story.style.visibility = "visible";
 }
