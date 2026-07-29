@@ -7,45 +7,58 @@ form markup challenge.
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Forms challenge</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
     <script defer src="index.js"></script>
   </head>
   <body>
-    We want your feedback!
+    <h1>We want your feedback!</h1>
 
-    We're very excited that you visited the little house in the woods,
+    <p>We're very excited that you visited the <a href="#">little house in the woods</a>,
     and we want to hear what you thought of it! Please fill in the below
     sections. You don't need to provide your name or contact details, but
-    if you do, we'll enter you into a prize draw where you'll have a chance
-    to win prizes.
+    if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
+    to win prizes.</p>
 
-    <div class="form-section">
+    <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" alt="">
     <form>
-    <legend>Facilities</legend>
+    <div class="form-section">
+    
+    <h2>Facilities</h2>
 
-    <label for="porridge">Was the porridge</label>
-    <input type="radio" name="porridge1" value="too-hot">Too hot?
-    <input type="radio" name="porridge2" value="too-cold">Too cold?
-    <input type="radio" name="porridge3" value="just-right">Just right?
+    <legend>Was the porridge</legend>
+    <input type="radio" id="porridge1" name="porridge1" value="too-hot">
+    <label for="porridge1">Too hot?</label>
+    <input type="radio" id="porridge2" name="porridge2" value="too-cold">
+    <label for="porridge2">Too cold?</label>
+    <input type="radio" id="porridge3" name="porridge3" value="just-right">
+    <label for="porridge3">Just right?</label>
 
-    <label for="beds">Were the beds</label>
-    <input type="radio" name="beds1" value="too-hard">Too hard?
-    <input type="radio" name="beds2" value="too-soft">Too soft?
-    <input type="radio" name="beds3" value="just-right">Just right?
+    <legend>Were the beds</legend>
+    <input type="radio" id="beds1" name="beds1" value="too-hard">
+    <label for="beds1">Too hard?</label>
+    <input type="radio" id="beds2" name="beds2" value="too-soft">
+    <label for="beds2">Too soft?</label>
+    <input type="radio" id="beds3" name="beds3" value="just-right">
+    <label for="beds3">Just right?</label>
 
-    <label for="chairs">Describe the chairs (select all you agree with)</label>
-    <input type="checkbox" name="chairs1" value="comfy">Comfy
-    <input type="checkbox" name="chairs2" value="luxurious">Luxurious
-    <input type="checkbox" name="chairs3" value="hi-tech">Hi-tech
-    <input type="checkbox" name="chairs4" value="pretty">Pretty
-    <input type="checkbox" name="chairs5" value="majestic">Majestic
+    <legend>Describe the chairs (select all you agree with)</legend>
+    <input type="checkbox" id="chairs1" name="chairs1" value="comfy">
+    <label for="chairs1">Comfy</label>
+    <input type="checkbox" id="chairs2" name="chairs2" value="luxurious">
+    <label for="chairs2">Luxurious</label>
+    <input type="checkbox" id="chairs3" name="chairs3" value="hi-tech">
+    <label for="chairs3">Hi-tech</label>
+    <input type="checkbox" id="chairs4" name="chairs4" value="pretty">
+    <label for="chairs4">Pretty</label>
+    <input type="checkbox" id="chairs5" name="chairs5" value="majestic">
+    <label for="chairs5">Majestic</label>
     </div>
     <div class="form-section">
-    <legend>About your hosts</legend>
+    <h2>About your hosts</h2>
 
-    <label for="bears">Who's your favorite bear?</label>
+    <legend>Who's your favorite bear?</legend>
     <select id="bears" name="bears">
       <option value="papa">Papa bear</option>
       <option value="mama">Mama bear</option>
@@ -53,7 +66,7 @@ form markup challenge.
       <option value="dozer">Dozer</option>
     </select>
 
-    <label for="greeting">Which greeting did you prefer?</label>
+    <legend>Which greeting did you prefer?</legend>
     <select id="greeting" name="greeting">
       <option value="wave">Wave</option>
       <option value="friendly">Friendly greeting</option>
@@ -62,14 +75,14 @@ form markup challenge.
     </select>
     </div>
     <div class="form-section">
-    <legend>Any other feedback?</legend>
+    <h2>Any other feedback?</h2>
 
     <label for="comments">Give us your comments</label>
     <br>
     <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
     </div>
     <div class="form-section">
-    <legend>Your details</legend>
+    <h2>Your details</h2>
 
     <label for="name">Name</label>
     <input type="text" id="name" name="name">
@@ -79,7 +92,7 @@ form markup challenge.
     <input type="tel" id="phone" name="phone">
     </div>
     <div class="form-section">
-    <input type="submit" value="Submit">
+    <button type="submit">Submit</button>
     </div>
     </form>
   </body>
